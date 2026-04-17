@@ -11,6 +11,7 @@ create table Products (
     product_name varchar(50) not null,
     price decimal(18,4),
     stock int default  0,
+    category_id int,
     foreign key (category_id) references Categories (category_id)
 );
 
